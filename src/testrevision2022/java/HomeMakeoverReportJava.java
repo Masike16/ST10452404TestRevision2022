@@ -37,19 +37,19 @@ public class HomeMakeoverReportJava {
             int monthlyTotal = 0;
             for (int j = 0; j < makeovers[i].length; j++) {
                 System.out.printf(" %10d", makeovers[i][j]);
-                monthlyTotal += makeovers[i][j];
+                monthlyTotal += makeovers[i][j];//calculates the amounts to get totals
             }
             monthlyTotals[i] = monthlyTotal;
             System.out.println();
         }
 
-        // Display Monthly Totals
+        // Display the Monthly Totals
         System.out.println("-----------------------------------------------------");
         System.out.println("MONTHLY TOTALS");
         System.out.println("-----------------------------------------------------");
         for (int i = 0; i < months.length; i++) {
             System.out.printf("%-10s %10d", months[i].substring(0, 3), monthlyTotals[i]);
-            if (monthlyTotals[i] >= 15) {
+            if (monthlyTotals[i] >= 15) {//totals below 15 dont get 3 stars
                 System.out.print("   ***");
             }
             System.out.println();
