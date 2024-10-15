@@ -1,5 +1,5 @@
 /*
- Group 1
+ Group 1 code presentation
  */
 package staffhiringapplication.java;
 
